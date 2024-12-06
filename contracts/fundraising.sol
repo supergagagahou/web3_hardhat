@@ -11,7 +11,7 @@ pragma solidity ^0.8.22;
 */
 
 contract fundraising {
-    address owner;
+    address public owner;
     //发起者
     uint256 public target = 10**18; //wei
     //目标
@@ -35,6 +35,7 @@ contract fundraising {
     }
 
     event fund_event(address add, uint256 money);
+
 
     function fund() external payable {
         //投资

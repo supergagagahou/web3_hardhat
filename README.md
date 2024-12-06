@@ -20,6 +20,9 @@ npx env-enc set
 npx hardhat verify --network sepolia 合约地址 "构造函数参数"
 5.1、在部署脚本内写入验证脚本可以在部署的同时验证合约，命令和部署脚本一样
 5.2、已部署众筹合约的0x99AA4195b76226C4Df1eDDc6eaB9C93361735aCa
+6、使用deploy库部署合约
+6.1、安装deploy库，编写deploy脚本
+
 
 
 
