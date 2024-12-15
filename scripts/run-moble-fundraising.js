@@ -36,23 +36,23 @@ async function main() {
 
 
     //获取账户
-    const [Account1,Account2]=await ethers.getSigners()
+//     const [Account1,Account2]=await ethers.getSigners()
 
-   const fundTX=await fund.fund({value:ethers.parseEther("0.1")})//发送0.1eth给合约
-    await fundTX.wait()//等待交易完成
-    const fundBalance=await ethers.provider.getBalance(fund.target)//获取合约余额,这里的target是合约地址
-    console.log(`fund balance: ${fundBalance}`)
+//    const fundTX=await fund.fund({value:ethers.parseEther("0.1")})//发送0.1eth给合约
+//     await fundTX.wait()//等待交易完成
+//     const fundBalance=await ethers.provider.getBalance(fund.target)//获取合约余额,这里的target是合约地址
+//     console.log(`fund balance: ${fundBalance}`)
 
-    //使用第二个账户进行转账，不写connect(Account2)默认使用第一个账户
-    const fundTX2=await fund.connect(Account2).fund({value:ethers.parseEther("0.2")})//发送0.1eth给合约
-    await fundTX2.wait()//等待交易完成
-    const fundBalance2=await ethers.provider.getBalance(fund.target)//获取合约余额,这里的target是合约地址
-    console.log(`fund balance: ${fundBalance2}`)
+//     //使用第二个账户进行转账，不写connect(Account2)默认使用第一个账户
+//     const fundTX2=await fund.connect(Account2).fund({value:ethers.parseEther("0.2")})//发送0.1eth给合约
+//     await fundTX2.wait()//等待交易完成
+//     const fundBalance2=await ethers.provider.getBalance(fund.target)//获取合约余额,这里的target是合约地址
+//     console.log(`fund balance: ${fundBalance2}`)
 
-    const Account1Balance=await ethers.provider.getBalance(Account1.address)//获取第一个账户余额
-    console.log(`Account1 balance: ${Account1Balance}`)
-    const Account2Balance=await ethers.provider.getBalance(Account2.address)//获取第二个账户余额
-    console.log(`Account2 balance: ${Account2Balance}`)
+//     const Account1Balance=await ethers.provider.getBalance(Account1.address)//获取第一个账户余额
+//     console.log(`Account1 balance: ${Account1Balance}`)
+//     const Account2Balance=await ethers.provider.getBalance(Account2.address)//获取第二个账户余额
+//     console.log(`Account2 balance: ${Account2Balance}`)
 }
 
 main().then().catch((error)=>{

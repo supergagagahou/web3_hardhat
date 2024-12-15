@@ -19,7 +19,7 @@ const ALCHEMY_API_URL = process.env.ALCHEMY_API_URL
 const METAMASK_PRIVATE_KEY_0 = process.env.METAMASK_PRIVATE_KEY_0
 //账户2
 const METAMASK_PRIVATE_KEY_1 = process.env.METAMASK_PRIVATE_KEY_1
-//apiKey
+//etherscan apiKey
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 
 
@@ -73,5 +73,9 @@ module.exports = {
   //   // Doesn't need an API key
   //   enabled: true
   // }
+  // ,
+  // paths:{//将合约 ABI 导出到前端项目中
+  //   artifacts: "./frontend/src/artifacts", // 设置 ABI 存放路径
 
+  // }
 };
