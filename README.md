@@ -42,7 +42,7 @@ npx hardhat verify --network sepolia 合约地址 "构造函数参数"
 
 5.2、已部署众筹合约fund的0x6FDB3D633C08D1168963d32A35Ef10FdBa8fbe37
 
-测试链接：(https://sepolia.etherscan.io/address/0x99AA4195b76226C4Df1eDDc6eaB9C93361735aCa#readContract)
+测试链接：(https://sepolia.etherscan.io/address/0x6FDB3D633C08D1168963d32A35Ef10FdBa8fbe37aCa#readContract)
 
 6、使用deploy库部署合约
 npx hardhat deploy --network sepolia
@@ -53,3 +53,6 @@ npx hardhat deploy --network localhost
 npx hardhat run --network sepolia .\scripts\run-moble-fundraising.js
 
 8.0、使用react框架构建了一个简单的前端界面
+cd .\frontend\
+8.1、启动react服务
+npm strart
