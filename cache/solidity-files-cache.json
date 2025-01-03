@@ -1710,6 +1710,49 @@
       "artifacts": [
         "Test"
       ]
+    },
+    "C:\\Users\\tian\\Desktop\\Warehouse\\Demo\\solidity\\web3_hardhat\\contracts\\pet.sol": {
+      "lastModificationDate": 1734262025686,
+      "contentHash": "4cbe04a8ad35cd29096331315773d624",
+      "sourceName": "contracts/pet.sol",
+      "solcConfig": {
+        "version": "0.8.26",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.26"
+      ],
+      "artifacts": [
+        "PetTradingSystem"
+      ]
     }
   }
 }

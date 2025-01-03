@@ -12,7 +12,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 //没有使用network参数，默认部署到的是hardhat网络，获取到的地址也是hardhat网络的地址，而不是sepolia地址
 
   console.log("deployer:", accounts);
-  await deploy("fundraising", {
+  await deploy("fundraising", {// 部署合约名称
     from: accounts, // 部署者账户
     args: [FUND_TARGET, FUND_TIME], // 构造函数参数
     waitConfirmations: WAITING_BLOCKS, // 等待5个区块的确认
